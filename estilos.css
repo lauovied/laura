@@ -1,0 +1,266 @@
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+		background: rgb(255, 255, 255);
+		background-image: url('https://i.pinimg.com/564x/d4/74/51/d47451f3709d0234adde22ca9ec452b3.jpg'); 
+		background-size: cover;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(234, 209, 233, 0.504);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+		background-color: #ebc5d8f1;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #000000;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #000000;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #030303;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #000000;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(40, 173, 244, 0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	#texto_inicio{
+		margin: 5px;
+		font: 40px Segoe Print;
+		text-align: center;
+	
+	}
+	/*Fin de Menù lateral*/
+
+	/*EDITAR INICIO*/
+
+	#principal {
+		display: flex;  
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	#tit_prin {
+		font-size: 56px;
+		color: #2600ff;
+		font: 55px Avocado Creamy;
+
+	}
+	
+	.title_active {
+		color: #ba19ff;
+		font-weight: 700;
+		font: 55px cursive;
+
+	}
+	
+	#tex_prin {
+		font-size: 34px;
+		color: #0c0c0c;
+		margin: 15px 0;
+		font: 20px Segoe Print;
+	}
+	
+	#demo {
+		border-radius: 8px;
+		background: #76f0f4;
+		text-decoration: none;
+		color: #1E1F01;
+		font-size: 20px;
+		font-weight: 700;
+		padding: 20px 30px;
+		margin: 15px 0;
+	}
+	#mockup {
+		width: 400px;
+		object-fit: cover;
+	}
+	#principal{
+		text-align: center;
+	}
+	#prin_textos {
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+		
+	}
+	#imagen1{
+		width: 35%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+		#form{
+			text-align: center;
+
+		}
+		#cuadro_servicios{
+			text-align: center;
+		}
+		.servicios {
+		width: 300px;
+		height: 260px;
+		-webkit-transition: -webkit-transform 1s ease 0.3s;
+		}
+		.servicios:hover{
+			-webkit-transform: scale(0.5);
+		}
+		#serv_izq, #serv_centro, #serv_der{
+			width: 32%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		/*cuadros img*/
+		*{
+			box-sizing: border-box;
+		  }
+		  
+		  body {
+			font-family: Arial, sans-serif;
+		  }
+		  
+		  .carousel-container {
+			display: flex; /* Organiza los carruseles en fila */
+			justify-content: 5px; /* Espacio entre carruseles */
+			width: 100%; /* Ajusta el contenedor principal */
+			justify-content: center;
+		  }
+		  
+		  .carousel {
+			position: relative;
+			width: 300px; /* Ancho del carrusel */
+			height: 400px; /* Altura del carrusel */
+			margin: 30px; /* Espacio entre carruseles */
+			overflow: hidden;
+		  }
+		  
+		  .slides img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: none;
+		  }
+		  
+		  .slides img.active {
+			display: block;
+		  }
+		  
+		  .prev, .next {
+			position: absolute;
+			top: 50%;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+			transform: translateY(-50%);
+		  }
+		  
+		  .prev {
+			left: 0;
+		  }
+		  
+		  .next {
+			right: 0;
+		  }
+		  

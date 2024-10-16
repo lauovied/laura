@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Glam</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Servicios</h1>
+			</div>
+			<nav class="menu">
+				<a href="index.html">Inicio</a>
+				<a href="nosotros.html">Nosotros</a>
+				<a href="#">Blog</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</div>
+	</header>
+    <br><br><br>
+	<div class="capa"></div>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="maquillaje.html">Maquillaje</a>
+			<a href="#">Ropa</a>
+			<a href="#">accesorios</a>
+			<a href="#">Maquillaje para<br>alguna ocasión</a>
+
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<BR><BR><br><br><br>
+	<div class="carousel-container">
+		<div class="carousel">
+		  <div class="slides">
+			<img src="img/base.jpg" alt="Imagen 1">
+			<img src="img/base3.jpg" alt="Imagen 3">
+		  </div>
+		  <button class="prev" onclick="changeSlide(-1, 0)">&#10094;</button>
+		  <button class="next" onclick="changeSlide(1, 0)">&#10095;</button>
+		</div>
+	  
+		<div class="carousel">
+		  <div class="slides">
+			<img src="img/rubor1.jpeg" alt="Imagen 4">
+			<img src="img/rubor2.jpeg" alt="Imagen 5">
+		  </div>
+		  <button class="prev" onclick="changeSlide(-1, 1)">&#10094;</button>
+		  <button class="next" onclick="changeSlide(1, 1)">&#10095;</button>
+		</div>
+	  
+		<div class="carousel">
+		  <div class="slides">
+			<img src="img/labial.jpeg" alt="Imagen 7">
+			<img src="img/labial2.jpeg" alt="Imagen 8">
+		  </div>
+		  <button class="prev" onclick="changeSlide(-1, 2)">&#10094;</button>
+		  <button class="next" onclick="changeSlide(1, 2)">&#10095;</button>
+		</div>
+	  </div>
+	  
+	  <script src="script.js"></script>
+</body>
+</html>
